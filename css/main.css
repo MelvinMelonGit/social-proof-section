@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Spartan', sans-serif; 
+    font-size: 13px;
+    flex-direction: column;
+    padding: 5rem;
+    background-color: hsl(0, 0%, 100%);
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top 0 left 2rem, bottom 0 right 2rem;
+}
+
+section {
+    padding: 2rem;
+}
+
+.row {
+    display: flex;
+    align-items: stretch;
+}
+
+.row-one {
+    align-items: center;
+}
+
+.card {
+    background-color:hsl(300, 43%, 22%);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin: 1rem;
+    flex-basis: 100%;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.avatar img {
+    width: 20%;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
+
+.one, .two {
+    flex-basis: 100%;
+    margin: 1rem;
+}
+
+.one {
+    padding-right: 10rem;
+}
+
+.one p {
+    color: hsl(303, 10%, 53%);
+}
+
+.two {
+    padding: 1rem;
+}
+
+.four {
+    transform: translateY(1rem);
+}
+
+.five {
+    transform: translateY(2rem);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+h1, li {
+    color: hsl(300, 43%, 22%);
+}
+
+h2  {
+    color: hsl(333, 80%, 67%);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+h2 span {
+    display: block;
+    font-weight: 700;
+}
+
+h2 span, .card p {
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+
+li {
+    list-style-type: none;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 0.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+li img {
+    margin-right: 0.5rem;
+}
+
+li .rating {
+    margin-left: 1.5rem;
+}
+
+.li-one {
+    transform: translateX(-2rem);
+}
+
+.li-three {
+    transform: translateX(2rem);
+}
+
+@media only screen and (max-width: 768px) {
+
+    .row {
+        flex-direction: column;  
+        display: inline-block;
+    }
+
+    .row-one {
+        text-align: center;
+    }
+
+    h1 {
+       margin-bottom: 1.5rem;
+    }
+
+    .one {
+        padding-right: 0;
+    }
+
+    .two {
+        padding: 0;
+        margin: 1.5rem 0;
+    }
+
+    .four {
+        transform: translateY(0);
+    }
+
+    .five {
+        transform: translateY(0);
+    }   
+
+    li {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    li .rating {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .li-one {
+        transform: translateX(0);
+    }
+
+    .li-three {
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    body, section {
+        padding: 2rem 0.1rem;
+    }
+}
